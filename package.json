@@ -2,12 +2,19 @@
   "name": "sa-sdk",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config rollup.config.js",
     "eslint": "eslint"
   },
+  "files": [
+    "dist"
+  ],
+  "types": "./index.d.ts",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
